@@ -1,0 +1,198 @@
+<MyLayout>
+    BoxLayout
+        orientation:"vertical"
+        size: root.width, root.height
+
+        TextInput:
+            id : input_field
+            text: "0"
+            halign: "right"
+            size_hint: (1.0, .15)
+    	    font_size: 50
+
+        GridLayout:
+            cols: 4
+            rows: 5
+            spacing: 5
+
+            Button:
+                text: "%"
+                size_hint: (.2, .2)
+                font_size: 35
+                background_color: 247.0/255.0, 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("%")
+
+            Button:
+                text: "CE"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 247.0/255.0, 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.clearOneDigit()
+
+            Button:
+                text: "C"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 247.0/255.0, 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.clearInput()
+            
+            Button:
+                text: "+"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 247.0/255.0, 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("+")
+
+
+            Button:
+                text: "7"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("7")
+
+            Button:
+                text: "8"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("8")
+
+            Button:
+                text: "9"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("9")
+
+            Button:
+                text: "X"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 247.0/255.0, 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("*")
+
+            Button:
+                text: "4"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("4")
+
+            Button:
+                text: "5"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("5")
+
+            Button:
+                text: "6"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("6")
+
+            Button:
+                text: "-"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 247.0/255.0, 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("-")
+
+            Button:
+                text: "1"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("1")
+
+            Button:
+                text: "2"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("2")
+
+            Button:
+                text: "3"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("3")
+
+            Button:
+                text: "+/-"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 247.0/255.0, 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.oppositesign()
+
+            Button:
+                text: "0"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("0")
+
+            Button:
+                text: "."
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+
+
+            Button:
+                text: "/"
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 44.0/255.0, 47/255.0, 141.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonclicked("/")
+
+            Button:
+                text: "="
+                size_hint: (.2, .2)
+                font_size: 50
+                background_color: 247.0/255.0, 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.calculate()
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+                
+            
+
+            
+
